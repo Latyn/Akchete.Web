@@ -58,9 +58,6 @@ namespace Ak.Controllers.Web
         {
             return View();
         }
-        public IActionResult Event()
-        {
-            return View();
-        }
+
     }
 }

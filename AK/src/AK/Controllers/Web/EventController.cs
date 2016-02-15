@@ -12,7 +12,7 @@ using Ak.Models;
 
 namespace Ak.Controllers.Web{
 
-    [Route("Event")]
+
     public class EventController : Controller
         {
 
@@ -25,12 +25,12 @@ namespace Ak.Controllers.Web{
 
         }
         [HttpPost]
-        public IActionResult Index(EventViewModel model)
+        public IActionResult Event(EventViewModel model)
         {
             return View(model);
         }
-        [Route("Index")]
-        public IActionResult Test()
+
+        public IActionResult Index()
         {
             return View();
         }

@@ -56,32 +56,13 @@ namespace AK
             //app.UseDefaultFiles();
             app.UseStaticFiles();
 
-            app.UseMvc(configureRoutes =>
+            app.UseMvc(config=>
             {
-
-
-                //configureRoutes.MapRoute(
-                //    name: "Event",
-                //    template: "Event/{action=Index}/{id?}"
-                //     );
-
-                configureRoutes.MapRoute(
-                name: "Event",
-                template: "Event/{action}/{id?}",
-                defaults: new {controller = "Event",action = "Index" }
-                    );
-
-                configureRoutes.MapRoute(
+                config.MapRoute(
                 name: "Default",
                 template: "{controller}/{action}/{id?}",
                 defaults: new {controller="App",action="Index"}
                     );
-
-
-                //config.MapRoute(
-                //    name: "EventCtrl",
-                //    template: "{controller=Event}/{action=Event}/{id?}"
-                //     );
 
             });
                        
