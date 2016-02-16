@@ -8,6 +8,7 @@ using Ak.Services;
 using AK;
 using Ak.Models;
 
+
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Ak.Controllers.Web{
@@ -33,6 +34,11 @@ namespace Ak.Controllers.Web{
         public IActionResult Index()
         {
             return View();
+        }
+        public IActionResult ListEvents()
+        {
+            IEnumerable<Event> newList = _context.Events.ToList();
+            return View(newList); 
         }
     }
     
