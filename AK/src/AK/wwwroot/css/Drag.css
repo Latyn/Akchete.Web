@@ -11,10 +11,10 @@
   list-style-position: inside;
 }
 ul.source {
-  border-color: #f8e0b1;
+  border-color: #1a5b7d;
 }
 ul.target {
-  border-color: #add38d;
+  border-color: #1a5b7d;
 }
 .source li, .target li {
   margin: 5px;
@@ -25,14 +25,14 @@ ul.target {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .source li {
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
-  color: #c09853;
+  background-color: #91e8da;
+  border: 1px solid #5edbd3;
+  color: #1a5b7d;
 }
 .target li {
   background-color: #ebf5e6;
   border: 1px solid #d6e9c6;
-  color: #468847;
+  color: #1a5b7d;
 }
 .sortable-dragging {
   border-color: #ccc !important;
@@ -43,10 +43,10 @@ ul.target {
   height: 40px;
 }
 .source .sortable-placeholder {
-  border: 2px dashed #f8e0b1 !important;
-  background-color: #fefcf5 !important;
+  border: 2px dashed #289edb !important;
+  background-color: #91e8da !important;
 }
 .target .sortable-placeholder {
-  border: 2px dashed #add38d !important;
-  background-color: #f6fbf4 !important;
+  border: 2px dashed #289edb !important;
+  background-color: #91e8da !important;
 }

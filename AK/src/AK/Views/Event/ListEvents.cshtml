@@ -18,14 +18,22 @@
                 <ul class="source connected">
                     @foreach (var item in Model)
                     {
-                        <li id="@item.Id">
+                        <li id="@item.Id" class="text-center">
                             @item.Name.ToString()
                         </li>
                     }
                 </ul>
             </div>
             <div class="col-md-6">
-                <ul class="target connected"></ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="target connected" id="target"></ul>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Details</label>
+                        <textarea cols="40" class="form-control" id="detailsText"></textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
