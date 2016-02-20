@@ -16,9 +16,12 @@ $("#navbar li").on("click", function () {
 });
 }());
 
-
-//$("#target").bind("DOMSubtreeModified", function () {
-//        if ($('ul#target').children('li').length >= 1) {
-//            $("#detailsText").val(@model.item.Name);
-//        }
-//});
+$("#target").bind("DOMSubtreeModified", function () {
+    if ($('ul#target').children('li').length >= 1) {
+        $("#detailsText").val("This is the map");    
+    }
+    else {
+        $("textarea").val('');
+        $("#detailsText").attr("placeholder", "No loaded data");
+    }
+});

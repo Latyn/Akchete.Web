@@ -9,7 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Ak.Services;
 using Microsoft.Extensions.Configuration;
 using Ak.Models;
-
+using AutoMapper;
+using Ak.ViewModels;
 
 namespace AK
 {
@@ -55,6 +56,22 @@ namespace AK
         {
             //app.UseDefaultFiles();
             app.UseStaticFiles();
+
+
+            Mapper.Initialize(config =>
+            {
+                config.CreateMap<EventViewModel, Event>().ReverseMap();
+            });
+
+
+
+            //var mp = new MapperConfiguration(cfg =>
+            //{
+            //    //cfg.AddProfile<AppProfile>();
+            //    cfg.CreateMap<EventViewModel, Event>().ReverseMap();
+            //});
+
+
 
             app.UseMvc(config=>
             {
