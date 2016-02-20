@@ -1,0 +1,83 @@
+﻿@model ICollection<Ak.ViewModels.EventViewModel>
+@{
+    ViewBag.Title = "Drag and Drop Event";
+}
+@section Scripts{
+    <script type="text/javascript" src="~/wwwroot/lib/dragdrop/jquery.sortable.min.js"></script>
+    <link href="~/css/Drag.css" rel="stylesheet" />
+    @*http://web1.cs-computing.com/apps/demo/bootstrap/bootstrap_demo.nsf/dnd.xsp*@
+}
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="sideBySide">
+            <div class="col-md-12 text-center">
+                <h1>@ViewBag.Title</h1>
+            </div>
+            <div class="col-md-6">
+                <ul class="source connected">
+                    @foreach (var item in Model)
+                    {
+                        <li id="@item.Id" class="text-center">
+                            @item.Name.ToString()
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="target connected" id="target"></ul>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Details</label>
+                        <textarea cols="40" class="form-control" id="detailsText" placeholder="No loaded data"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<div class="col-md-12">
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li>
+                        @item.Name.ToString();
+                    </li>
+                    <li>
+                        @item.Place.ToString();
+                    </li>
+                    <li>
+                        @item.MusicGender.ToString();
+                    </li>
+                    <li>
+                        @item.Latitude.ToString();
+                    </li>
+                    <li>
+                        @item.Longitude.ToString();
+                    </li>
+                }
+            </ul>
+        </div>*@
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Here will be the map
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload = function () {
+        $(".source, .target").sortable({
+            connectWith: ".connected"
+        });
+    };
+
+</script>

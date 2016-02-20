@@ -12,7 +12,8 @@
     "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
     "Microsoft.Extensions.Configuration": "1.0.0-rc1-final",
     "TagHelpers": "1.0.0-rc1-build75",
-    "EntityFramework.Commands": "7.0.0-rc1-final"
+    "EntityFramework.Commands": "7.0.0-rc1-final",
+    "AutoMapper": "4.1.1"
   },
 
   "commands": {

@@ -16,6 +16,9 @@ namespace Ak.ViewModels
         //public string Email { get; set; }
 
         [Required]
+        public int Id { get; set; }
+
+        [Required]
         [StringLength(1024, MinimumLength = 5)]
         public string Details { get; set; }
         

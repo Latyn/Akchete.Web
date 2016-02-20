@@ -35,7 +35,7 @@
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="App" asp-action="Index">Home</a></li>
                         <li><a asp-controller="App" asp-action="Profile">My Ak profile</a></li>
-                        <li><a asp-controller="Event" asp-action="Index"> Events</a></li>
+                        <li><a asp-controller="Event" asp-action="ListEvents"> Events</a></li>
                         <li><a asp-controller="App" asp-action="Models">Models</a></li>
                         <li><a asp-controller="App" asp-action="About">About</a></li>
                         <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
@@ -65,10 +65,10 @@
         </div>
     </div>
     <div class="row">
-
-        @RenderBody();
-
-    </div>
+             <div class="container">
+            @RenderBody()
+            </div>
+        </div>
 
     <script type="text/javascript" src="~/wwwroot/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="~/js/site.js"></script>
