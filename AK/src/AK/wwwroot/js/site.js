@@ -16,12 +16,22 @@ $("#navbar li").on("click", function () {
 });
 }());
 
-$("#target").bind("DOMSubtreeModified", function () {
-    if ($('ul#target').children('li').length >= 1) {
-        $("#detailsText").val("This is the map");    
-    }
-    else {
-        $("textarea").val('');
-        $("#detailsText").attr("placeholder", "No loaded data");
-    }
+// Element activates map on List Event View
+$("#source div").on("click", function () {
+
+        var t = mod;
+        var elId = $(this).attr("id");
+        var modEl = mod[elId - 1];
+        $("#detailsText").val(modEl.Details);
+        Init(modEl.Latitude, modEl.Longitude);
+ 
+        //$("textarea").val('');
+        //$("#detailsText").attr("placeholder", "No loaded data");
+    
+});
+
+$("#main_menu").click(function () {
+    $("#main_menu").fadeOut("slow", function () {
+        // Animation complete.
+    });
 });

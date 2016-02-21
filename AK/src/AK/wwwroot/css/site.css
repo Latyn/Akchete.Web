@@ -1,33 +1,5 @@
-﻿/*body {
-    font-family: 'Bookman Old Style';
-    font-size: 16px;
-    margin: 0;
-}
-
-label{
-    font-weight: bold;
-    display:block;
-}
-
-input[type=text], input[password],  input[type=email], textarea{
-    width: 150px;
-}*/
-
-/*#main {
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-#footer {
-    background-color: #000000;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}*/
-
-.headshot {
-    max-width: 100px;
+﻿.headshot {
+    max-width: 65px;
     padding: 15px;
     margin-left: 60px;
 }
@@ -36,64 +8,26 @@ input[type=text], input[password],  input[type=email], textarea{
     font-size: 18px;
 }
 
-    .menu li {
-        list-style-type: none;
-    }
-
-        .menu li.active {
-            font-weight: bold;
-        }
-
-#sidebar {
-    background: #080808;
-    color: #ffffff;
-    position: fixed;
-    height: 100%;
-    /*width: 250px;
-    left: 0;
-    margin: 0;
-    -moz-transition: left ease .25s;
-    -o-transition: left ease .25s;
-    -webkit-transition: left ease .25s;
-    transition: left ease .25s;*/
+.menu li {
+    list-style-type: none;
 }
 
-    #sidebar.hide-sidebar {
-        /*margin: -250px;
-        -moz-transition: left ease .25s;
-        -o-transition: left ease .25s;
-        -webkit-transition: left ease .25s;
-        transition: left ease .25s*/;
-    }
-
-#wrapper {
-    /*margin-left: 0;
-    -moz-transition: margin-left ease .25s;
-    -o-transition: margin-left ease .25s;
-    -webkit-transition: margin-left ease .25s;
-    transition: margin-left ease .25s;*/
+.menu li.active {
+    font-weight: bold;
 }
 
-    #wrapper.hide-sidebar {
-        /*margin-left: 0;
-        -moz-transition: margin-left ease .25s;
-        -o-transition: margin-left ease .25s;
-        -webkit-transition: margin-left ease .25s;
-        transition: margin-left ease .25s;*/
-    }
-/*No padding and marging on bootstrap col*/
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+.toppadding {
+   padding: 10px 0 10px 0;
+
 }
 
 #main_navbar{
     background-color:aqua;
 }
-
-/*#sidebarToggle {
-    margin: 5px 0 0 310px;
-}*/
 
 .fa-cog {
   color: #b6ff00;
