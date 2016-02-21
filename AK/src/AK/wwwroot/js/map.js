@@ -17,6 +17,8 @@ function Init(Lat, Long) {
         disableDoubleClickZoom: true
     });
 
+    map.setPadding(15,0,0,0);
+
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,

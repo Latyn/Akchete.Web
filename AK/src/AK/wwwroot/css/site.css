@@ -20,6 +20,10 @@
    padding: 0 !important;
    margin: 0 !important;
 }
+.toppadding {
+   padding: 10px 0 10px 0;
+
+}
 
 #main_navbar{
     background-color:aqua;
